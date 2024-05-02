@@ -1,0 +1,174 @@
+@import url('./reset_piccalil.css');
+
+@font-face{
+    font-family: 'Outfit';
+    src: url('../assets/fonts/outfit/Outfit-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'YoungSerif';
+    src: url('../assets/fonts/young-serif/YoungSerif-Regular.ttf');
+}
+
+:root{
+    --clr-Nutmeg: hsl(14, 45%, 36%);
+    --clr-Dark-Raspberry: hsl(332, 51%, 32%);
+    --clr-White: hsl(0, 0%, 100%);
+    --clr-Rose-White: hsl(330, 100%, 98%);
+    --clr-Eggshell: hsl(30, 54%, 90%);
+    --clr-Light-Grey: hsl(30, 18%, 87%);
+    --clr-Wenge-Brown: hsl(30, 10%, 34%);
+    --clr-Dark-Charcoal: hsl(24, 5%, 18%);
+    --fw-6: 600;
+    --fw-7: 700;
+    --padding-1: 3rem;
+    --radius-1: 1rem;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: var(--clr-Eggshell);
+    font-family: 'Outfit';
+    line-height: 1.5;    
+    color: var(--clr-Dark-Charcoal);
+}
+
+main{
+    width:clamp(50%, 740px, 90%);
+    height: clamp(80%, 1710px, 90%);
+    background-color: var(--clr-White);    
+    border-radius: 1.5rem;
+}
+
+.container{
+    padding: var(--padding-1);
+}
+
+img{
+    width: 100%;
+    border-radius: var(--radius-1);
+}
+
+h1, h2{
+    font-family: 'YoungSerif';
+    font-weight: var(--fw-7);
+}
+
+h1{
+    font-size: 2.4rem;
+}
+
+h2{
+    font-size: 2rem;
+    color: var(--clr-Nutmeg);
+}
+
+h3{
+    color: var(--clr-Dark-Raspberry);
+}
+
+.rose-white{
+    background-color: hsl(330, 100%, 98%);;
+    padding: 1rem 2rem;
+    border-radius: var(--radius-1);
+}
+
+.nutmeg{
+    color: var(--clr-Nutmeg);
+}
+
+.choc{
+    color: var(--clr-Dark-Charcoal);
+}
+
+.bold{
+    font-weight: var(--fw-7);
+}
+
+li{
+    padding-left: 1.5rem;
+}
+
+#title ul li::marker{
+    color: var(--clr-Dark-Raspberry);
+}
+
+#ingredients ul li::marker{
+    color: var(--clr-Nutmeg);
+}
+
+ul, ol{
+    padding-left: 1.5rem;
+}
+
+ol li::marker{
+    color: var(--clr-Nutmeg);
+    font-weight: var(--fw-7);
+    font-size: 1.1rem;
+}
+
+table{
+    font-size: 1.1rem;
+    width: 100%;
+    
+}
+
+
+tr{
+    height: 3rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+td{
+    padding-left: 2rem;
+}
+
+.space{
+    position: absolute;
+    left: 50%;
+}
+
+.border{
+    border-bottom: 1px solid #000;
+}
+
+@media (width < 500px){
+    :root{
+    --padding-1: 1rem;
+    }
+    main{
+        width: 100%;
+        border-radius: 0;
+    }
+    body{
+        font-size: 14px;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    h2{
+        font-size: 1.3rem;
+    }
+    .rose-white{
+        padding: 1rem 0.5rem;
+    }
+    table{
+        font-size: 1rem;
+    }
+    li{
+        padding-left: 0.7rem;
+    }
+}
+
+.attribution { 
+    font-size: 11px; text-align: center;
+    position: fixed; bottom: 0; right: 5%;
+ }
+.attribution a { color: hsl(228, 45%, 44%); }
